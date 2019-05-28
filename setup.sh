@@ -3,16 +3,16 @@
 git clone git@github.com:cbreuel/devenv.git
 cd devenv
 
-cp .bash_aliases ~/.bash_aliases
+cp -f .bash_aliases ~/.bash_aliases
 
 # Install tmux and tmx
 sudo apt-get install tmux
 curl -L https://raw.githubusercontent.com/arkku/dotfiles/master/bin/tmx -o ~/bin/tmx
 chmod u+x ~/bin/tmx
-cp ./.tmux.conf ~/.tmux.conf
+cp -f ./.tmux.conf ~/.tmux.conf
 
 # Install vim config and plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cp .vimrc ~/.vimrc
+cp -f .vimrc ~/.vimrc
 vim +PluginInstall +qall
 
