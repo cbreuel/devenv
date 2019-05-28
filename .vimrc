@@ -97,8 +97,8 @@ set hidden
 
 "set t_Co=256
 set background=dark
-"colorscheme primary
-colorscheme solarized
+colorscheme primary
+"colorscheme solarized
 
 " make backspace work across lines
 noremap <bs> X
