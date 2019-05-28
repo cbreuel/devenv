@@ -1,5 +1,10 @@
 #!/bin/bash
 
+git clone git@github.com:cbreuel/devenv.git
+cd devenv
+
+cp .bash_aliases ~/.bash_aliases
+
 # Install tmux and tmx
 sudo apt-get install tmux
 curl -L https://raw.githubusercontent.com/arkku/dotfiles/master/bin/tmx -o ~/bin/tmx
