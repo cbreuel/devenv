@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone git@github.com:cbreuel/devenv.git
+git clone https://github.com/cbreuel/devenv.git
 cd devenv
 
 cp -f .bash_aliases ~/.bash_aliases
