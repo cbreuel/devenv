@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt-get install -y --no-install-recommends git
 git clone https://github.com/cbreuel/devenv.git
 cd devenv
 
