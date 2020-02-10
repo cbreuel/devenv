@@ -2,6 +2,7 @@ from ubuntu:eoan
 
 ENV DOCKER_USER cbreuel
 
+# Create user
 RUN apt-get update && \
     apt-get install -y sudo && \
     adduser --disabled-password --gecos '' "$DOCKER_USER" && \

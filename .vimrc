@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " Non-Google version of .vimrc
 
 
