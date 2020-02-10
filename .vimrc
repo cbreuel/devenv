@@ -39,7 +39,7 @@ Plugin 'google/vim-maktaba'
 Plugin 'google/vim-glaive'
 Plugin 'google/vim-codefmt'
 
-Plugin 'queezythegreat/vim-YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Syntastic'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'

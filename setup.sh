@@ -18,7 +18,7 @@ cp -f .vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 # Install YouCompleteMe
-sudo apt install -y --no-install-recommends build-essential cmake python3-dev libboost-dev
-cd ~/.vim/bundle/vim-YouCompleteMe/
+sudo apt install -y --no-install-recommends build-essential cmake python3-dev
+cd ~/.vim/bundle/YouCompleteMe/
 ./install.sh
 
