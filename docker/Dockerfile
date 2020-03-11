@@ -26,6 +26,16 @@ RUN yes | sudo unminimize && \
     sudo apt-get install -y python3-pip && \
     sudo rm -rf /var/lib/apt/lists/*
 
+# Install Spark
+RUN yes | sudo unminimize && \
+    sudo apt-get install -y default-jdk && \
+    sudo rm -rf /var/lib/apt/lists/*
+RUN curl -LO https://www-us.apache.org/dist/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz && \
+    tar xvf spark-2.4.5-bin-hadoop2.7.tgz && \
+    sudo mv spark-2.4.5-bin-hadoop2.7/ /opt/spark
+RUN echo 'export SPARK_HOME=/opt/spark' >> ~/.bashrc
+RUN echo 'export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin' >> ~/.bashrc
+
 # Install personal config options
 RUN curl -L https://raw.githubusercontent.com/cbreuel/devenv/master/setup.sh | bash
 
