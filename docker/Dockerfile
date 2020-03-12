@@ -28,6 +28,7 @@ RUN yes | sudo unminimize && \
 
 # Install Spark
 RUN yes | sudo unminimize && \
+	sudo apt-get update && \
     sudo apt-get install -y default-jdk && \
     sudo rm -rf /var/lib/apt/lists/*
 RUN curl -LO https://www-us.apache.org/dist/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz && \
